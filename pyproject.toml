@@ -6,7 +6,6 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "clickhouse-connect>=0.8.15",
-    "colorama>=0.4.6",
     "result>=0.17.0",
     "toml>=0.10.2",
     "tqdm>=4.67.1",
