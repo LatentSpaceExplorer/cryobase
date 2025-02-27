@@ -5,6 +5,7 @@ from src.derived_analysis.token.erc20.erc20_balances import erc20_balance_analys
 from src.derived_analysis.token.erc20.erc20_meta import erc20_meta_analysis
 
 from src.derived_analysis.token.erc721.erc721_transfers import erc721_transfers_analysis
+from src.derived_analysis.token.erc721.erc721_meta import erc721_meta_analysis
 
 from src.derived_analysis.token.erc1155.erc1155_transfers import erc1155_transfers_analysis
 
@@ -42,10 +43,11 @@ def run_derived_analysis(
         erc20_meta_analysis(ch_client, chain_name, chain_rpc_url)
         erc20_balance_analysis(ch_client, chain_name)
 
-        # # erc721
+        # erc721
         erc721_transfers_analysis(ch_client, chain_name)
+        erc721_meta_analysis(ch_client, chain_name, chain_rpc_url)
 
-        # # erc1155
+        # erc1155
         erc1155_transfers_analysis(ch_client, chain_name) # currently only supporting single transfers
 
 
