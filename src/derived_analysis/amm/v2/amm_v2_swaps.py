@@ -22,7 +22,7 @@ def amm_v2_swaps_table_cmd(chain_name):
         (
             pool FixedString(20),
             block_number UInt64,
-            timestamp UInt64,
+            timestamp DateTime,
             transaction_hash FixedString(32),
             transaction_index UInt64,
             log_index UInt64,
